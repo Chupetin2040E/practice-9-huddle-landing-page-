@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+i {
+    margin: 0;
+}
+
+body {
+    background-image: url("huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 108%;
+    background-color: hsl(257, 40%, 49%);
+
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    height: 100vh;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+   margin: 3em 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: max-content;
+}
+.hero-img {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img img {
+    width: 935px;
+}
+
+
+.info {
+    align-self: self-start;
+    margin-top: 3em;
+    margin-left: 3em;
+    box-sizing: border-box;
+    width: 640px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #fff;
+    line-height: 1.3em;
+}
+
+p {
+    color: #fff;
+    font-size: 1.16em;
+    margin: 2em 0;
+    line-height: 1.5em;
+    opacity: .8;
+}
+
+a.button {
+    text-decoration-line: none;
+    padding: 1em 4em;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 20px #000000bd;
+}
+
+a.button:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-size: 1.5em;
+    color: #fff;
+    height: 5.12em;
+}
+
+
+.social-media a {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 .4em 0 .4em;
+    padding: 0.3em;
+}
+
+.social-media a:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width: 1440px) {
+    .hero-img img {
+        width: 785px;
+    }
+    .info {
+        padding: 0;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body, .hero, .hero-img, main {
+        display: block;
+    }
+    body {
+        background-image: url("huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg");
+    }
+    main {
+        margin: auto;
+        height: 100%;
+    }
+    .hero-img, .hero-img img {
+        width: 100%;
+    }
+    .info {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .social-media {
+        justify-content: center;
+        height: min-content;
+    }
+    .logo {
+        margin: 2em 0;
+        margin-bottom: 3em;
+    }
+    a.button{
+        padding: 1em 4em;
+        margin-bottom: 2.5em;
+        display: inline-block;
+    }
+}
